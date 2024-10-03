@@ -208,6 +208,16 @@ input[type="radio"] {
   background-color: var(--GreenMedium);
 }
 
+.container_modal.show {
+  display: flex; /* Mostramos la modal */
+  opacity: 1; /* Totalmente visible */
+}
+
+.container_modal.hide {
+  opacity: 0; /* Transición para desaparecer */
+  transition: opacity 0.5s ease; /* Transición de opacidad */
+}
+
 /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 740px) {
   .container_form {

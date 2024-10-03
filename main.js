@@ -72,6 +72,19 @@ formData.addEventListener("submit", (e) => {
   } else {
     // Aquí puedes enviar el formulario o realizar otras acciones
     modal.style.display = "block";
+
+    // Después de 3 segundos, iniciamos la animación de desaparición
+    setTimeout(function () {
+      modal.classList.remove("show");
+      modal.classList.add("hide");
+
+      // Después de 0.5 segundos (cuando la animación termina), ocultar completamente
+      setTimeout(function () {
+        modal.style.display = "none";
+        modal.classList.remove("hide");
+      }, 500);
+    }, 1000);
+
     container_query_r.style.backgroundColor = "var(--White)";
     container_query_l.style.backgroundColor = "var(--White)";
     formData.reset();
