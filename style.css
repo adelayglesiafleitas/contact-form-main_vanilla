@@ -175,6 +175,7 @@ button:active {
 .submit_button,
 .consent {
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 input[type="checkbox"],
