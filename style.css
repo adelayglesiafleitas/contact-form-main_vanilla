@@ -113,7 +113,7 @@ label {
 }
 .container_query_l,
 .container_query_r {
-  width: 315px;
+  width: 319px;
   height: 52px;
   border-radius: 5px;
   border: 2px solid var(--GreyMedium);
@@ -121,10 +121,13 @@ label {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-right: 25px;
+  margin-right: -3px;
   color: var(--GreenMedium);
   background-color: var(--White);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
+}
+.container_query_r {
+  transform: translateX(24px);
 }
 .input_radio {
   margin-left: 20px;
@@ -245,5 +248,8 @@ input[type="radio"] {
   }
   #message {
     height: 249px;
+  }
+  .container_query_r {
+    transform: translateX(0px);
   }
 }
