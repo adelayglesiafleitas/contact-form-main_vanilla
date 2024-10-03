@@ -41,25 +41,25 @@ formData.addEventListener("submit", (e) => {
   // Reiniciar errores
   const errorElements = document.getElementsByClassName("error");
   for (let i = 0; i < errorElements.length; i++) {
-    errorElements[i].style.display = "none"; // Ocultar todos los mensajes de error al inicio
+    errorElements[i].style.display = "none"; 
   }
 
   // Validar campos
   if (firstName === "") {
     isValid = false;
-    document.querySelector("#firt_name + .error").style.display = "block"; // Mostrar error específico
+    document.querySelector("#firt_name + .error").style.display = "block"; 
   }
   if (lastName === "") {
     isValid = false;
-    document.querySelector("#last_name + .error").style.display = "block"; // Mostrar error específico
+    document.querySelector("#last_name + .error").style.display = "block"; 
   }
   if (email === "") {
     isValid = false;
-    document.querySelector("#email + .error").style.display = "block"; // Mostrar error específico
+    document.querySelector("#email + .error").style.display = "block"; 
   }
   if (message === "") {
     isValid = false;
-    document.querySelector("#message + .error").style.display = "block"; // Mostrar error específico
+    document.querySelector("#message + .error").style.display = "block"; 
   }
   if (!consent.checked) {
     isValid = false;
@@ -67,18 +67,18 @@ formData.addEventListener("submit", (e) => {
     errorP.style.display = "block";
   }
   if (!isValid) {
-    // Aquí puedes realizar otras acciones si es necesario
+    
     console.log("El formulario no es válido.");
   } else {
-    // Aquí puedes enviar el formulario o realizar otras acciones
+    
     modal.style.display = "block";
 
-    // Después de 3 segundos, iniciamos la animación de desaparición
+    
     setTimeout(function () {
       modal.classList.remove("show");
       modal.classList.add("hide");
 
-      // Después de 0.5 segundos (cuando la animación termina), ocultar completamente
+      
       setTimeout(function () {
         modal.style.display = "none";
         modal.classList.remove("hide");
