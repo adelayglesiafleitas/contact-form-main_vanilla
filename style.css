@@ -84,7 +84,7 @@ label {
 #email,
 #message {
   width: 320px;
-  height: 35px;
+  height: 52px;
   border-radius: 5px;
   border: 2px solid var(--GreyMedium);
   padding: 15px;
@@ -114,7 +114,7 @@ label {
 .container_query_l,
 .container_query_r {
   width: 315px;
-  height: 35px;
+  height: 52px;
   border-radius: 5px;
   border: 2px solid var(--GreyMedium);
   margin-top: 15px;
