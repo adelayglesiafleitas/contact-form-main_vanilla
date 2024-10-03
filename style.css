@@ -122,7 +122,7 @@ label {
   align-items: center;
   justify-content: flex-start;
   margin-right: -3px;
-  color: var(--GreenMedium);
+  /*color: var(--GreenMedium);*/
   background-color: var(--White);
   transition: background-color 0.3s;
 }
