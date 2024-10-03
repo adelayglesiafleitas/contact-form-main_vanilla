@@ -25,7 +25,7 @@
         <h1 class="karla_700">Contact Us</h1>
         <form id="contacted_form">
           <!--section name -->
-          <section class="section_name">
+          <div class="section_name">
             <div class="firt_name">
               <label for="firt_name">First Name <span>*</span></label>
               <input
@@ -46,10 +46,10 @@
               />
               <p class="error">This field is required</p>
             </div>
-          </section>
+          </div>
 
           <!--section email_address -->
-          <section class="email_address">
+          <div class="email_address">
             <label for="email" id="label_email"
               >Email Address <span>*</span></label
             >
@@ -63,13 +63,13 @@
               Email Address Please enter a valid email address This field is
               required
             </p>
-          </section>
+          </div>
 
           <!--section container_query -->
-          <section class="query">
+          <div class="query">
             <label>Query Type <span>*</span></label>
             <div class="container_query" id="container_query">
-              <div class="container_query_type_l">
+              <div class="container_query_l" id="container_query_l">
                 <input
                   type="radio"
                   id="general_enquiry"
@@ -91,10 +91,10 @@
               </div>
             </div>
             <p class="error">Please select a query type</p>
-          </section>
+          </div>
 
           <!--section message -->
-          <section class="message">
+          <div class="message">
             <label for="message">Message*</label>
             <textarea
               name="message"
@@ -104,10 +104,10 @@
               aria-required="true"
             ></textarea>
             <p class="error">This field is required</p>
-          </section>
+          </div>
 
           <!--section consent -->
-          <section class="consent">
+          <div class="consent">
             <input type="checkbox" id="consent" />
             <label for="consent">
               I consent to being contacted by the team <span>*</span>
@@ -115,14 +115,14 @@
             <p class="error">
               To submit this form, please consent to being contacted
             </p>
-          </section>
+          </div>
 
           <!--section submit -->
-          <section class="container_submit_button">
+          <div class="container_submit_button">
             <button type="submit" class="submit_button karla_700">
               Submit
             </button>
-          </section>
+          </div>
         </form>
       </div>
 
